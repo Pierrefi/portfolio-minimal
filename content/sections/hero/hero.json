@@ -6,7 +6,7 @@
   "title": "Pierre Fihey",
   "subtitle": {
     "prefix": "PhD student in ",
-    "highlight": "Télécom Paris",
+    "highlight": "Télécom Paris, Institut Polytechnique de Paris",
     "suffix": "."
   },
   "description": "I am working on textual representations for Anomaly Detection under the supervision of Matthieu Labeau and Pavlo Mozharovskyi. My research explores the geometry of textual representations and the use of statistical tools such as data depth functions for Anomaly Detection.",
