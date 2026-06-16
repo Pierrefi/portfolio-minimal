@@ -1,22 +1,17 @@
 {
-  "intro": "Hej",
   "heroPhoto": {
-    "src": "../../images/lego-dummy.png",
+    "src": "../../images/IMG_5691.JPG",
     "alt": "My Photo"
   },
-  "image": {
-    "src": "../../images/waving-hand.png",
-    "alt": "Waving Hand Emoji"
-  },
-  "title": "I'm a Gatsby Starter",
+  "title": "Pierre Fihey",
   "subtitle": {
-    "prefix": "I do all the setup ",
-    "highlight": "for you",
+    "prefix": "PhD student in ",
+    "highlight": "Télécom Paris",
     "suffix": "."
   },
-  "description": "A Gatsby Starter Project to easily get started with Portfolio Minimal theme.",
+  "description": "I am working on textual representations for Anomaly Detection under the supervision of Matthieu Labeau and Pavlo Mozharovskyi. My research explores the geometry of textual representations and the use of statistical tools such as data depth functions in Anomaly Detection.",
   "socialProfiles": {
     "from": ["LinkedIn", "Medium", "Github", "Mail"],
-    "showIcons": false
+    "showIcons": true
   }
 }

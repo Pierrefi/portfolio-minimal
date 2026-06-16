@@ -39,5 +39,9 @@
     "animations",
     "dark-mode",
     "gdpr-compliant"
-  ]
+  ],
+  "devDependencies": {
+    "ajv": "^8.20.0",
+    "ajv-keywords": "^5.1.0"
+  }
 }

@@ -1,27 +1,56 @@
 import React from "react";
-import {
-  AboutSection,
-  ArticlesSection,
-  ContactSection,
-  HeroSection,
-  InterestsSection,
-  Page,
-  ProjectsSection,
-  Seo,
-} from "gatsby-theme-portfolio-minimal";
 
+import NewsSection from "../components/NewsSection";
+import TeachingSection from "../components/TeachingSection";
+import ResearchSection from "../components/ResearchSection";
+
+import {
+
+  ContactSection,
+
+  HeroSection,
+
+  Page,
+
+  ProjectsSection,
+
+  Seo,
+
+} from "gatsby-theme-portfolio-minimal";
+const globalStyle = `
+
+  #hero {
+    min-height: auto !important;
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  #hero > div {
+    padding-bottom: 1rem !important;
+  }
+`;
 export default function IndexPage() {
+
   return (
+
     <>
-      <Seo title="Gatsby Starter for Portfolio Minimal" />
+
+      <Seo title="Pierre Fihey" />
+      <style>{globalStyle}</style>
+
       <Page useSplashScreenAnimation>
+
         <HeroSection sectionId="hero" />
-        <ArticlesSection sectionId="articles" heading="Latest Articles" sources={['Medium']} />
-        <AboutSection sectionId="about" heading="About Portfolio Minimal" />
-        <InterestsSection sectionId="details" heading="Details" />
-        <ProjectsSection sectionId="features" heading="Built-in Features" />
-        <ContactSection sectionId="github" heading="Issues?" />
+
+        <NewsSection sectionId="news" heading="News" />
+
+        <ResearchSection sectionId="research" heading="Publications" />
+
+        <TeachingSection sectionId="teaching" heading="Teaching" />
+
       </Page>
+
     </>
+
   );
+
 }

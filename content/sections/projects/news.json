@@ -1,0 +1,31 @@
+{
+  "projects": [
+    {
+      "visible": true,
+      "category": "06/2026",
+      "title": "ACL 2026",
+      "description": "First paper accepted at ACL 2026 🇺🇸 — Oral presentation.",
+      "tags": ["Publication", "Oral"],
+      "links": []
+    },
+    {
+      "visible": true,
+      "category": "03/2025",
+      "title": "Université Paris-Dauphine",
+      "description": "Started teaching as a part-time lecturer — M2 ISF, Practical Data Science.",
+      "tags": ["Teaching"],
+      "links": []
+    },
+    {
+      "visible": true,
+      "category": "01/2025",
+      "title": "Télécom Paris",
+      "description": "Started my PhD at Télécom Paris, Institut Polytechnique de Paris.",
+      "tags": ["PhD"],
+      "links": []
+    }
+  ],
+  "button": {
+    "visible": false
+  }
+}

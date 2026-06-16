@@ -1,0 +1,54 @@
+import React from "react";
+
+const news = [
+  {
+    date: "06/2026",
+    text: "I had my first paper accepted at ACL 2026 🇺🇸 — Oral presentation.",
+  },
+  {
+    date: "03/2025",
+    text: "I started teaching as a part-time lecturer at Université Paris-Dauphine — M2 ISF, Practical Data Science.",
+  },
+  {
+    date: "01/2025",
+    text: "I started my PhD at Télécom Paris, Institut Polytechnique de Paris.",
+  },
+];
+
+export default function NewsSection({ sectionId = "news", heading = "News" }) {
+  return (
+    <section id={sectionId} style={{ padding: "6rem 0" }}>
+      <div style={{ maxWidth: "960px", margin: "0 auto", padding: "0 2rem" }}>
+        <h2 style={{ marginBottom: "2.5rem" }}>{heading}</h2>
+
+        <div style={{ display: "grid", gap: "1.4rem" }}>
+          {news.map((item) => (
+            <div
+              key={item.date}
+              style={{
+                display: "grid",
+                gridTemplateColumns: "120px 1fr",
+                gap: "1.5rem",
+                alignItems: "start",
+                padding: "1.2rem 0",
+                borderBottom: "1px solid rgba(0,0,0,0.12)",
+              }}
+            >
+              <div
+                style={{
+                  fontWeight: 700,
+                  opacity: 0.75,
+                  whiteSpace: "nowrap",
+                }}
+              >
+                {item.date}
+              </div>
+
+              <p style={{ margin: 0, lineHeight: 1.7 }}>{item.text}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
