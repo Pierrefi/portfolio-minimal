@@ -5,7 +5,7 @@ const publications = [
     title:
       "Enhancing Two-Step Textual Anomaly Detection through Contrastive Learning and Representation Geometry",
     authors: "Pierre Fihey, Matthieu Labeau, Pavlo Mozharovskyi",
-    venue: "ACL 2026 (Oral)",
+    venue: "ACL 2026",
     link: "https://aclanthology.org/2026.acl-long.1312/",
   },
 ];
