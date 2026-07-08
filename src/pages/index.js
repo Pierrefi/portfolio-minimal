@@ -46,7 +46,7 @@ export default function IndexPage() {
 
         <ResearchSection sectionId="research" heading="Publications" />
 
-       <TeachingSection sectionId="teaching" heading="Teaching" />
+        <TeachingSection sectionId="teaching" heading="Teaching" />
 
         <TalksSection sectionId="talks" heading="Talks" />
 
