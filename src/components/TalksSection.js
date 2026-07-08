@@ -1,5 +1,4 @@
 import React from "react";
-import { Section } from "gatsby-theme-portfolio-minimal";
 
 const talks = [
   {
@@ -13,144 +12,80 @@ const talks = [
   },
 ];
 
-export default function TalksSection({ sectionId, heading }) {
-
+export default function TalksSection({
+  sectionId = "talks",
+  heading = "Talks",
+}) {
   return (
+    <section id={sectionId} style={{ padding: "2rem 0" }}>
+      <div
+        style={{
+          maxWidth: "960px",
+          margin: "0 auto",
+          padding: "0 2rem",
+        }}
+      >
+        <h2 style={{ marginBottom: "2rem" }}>{heading}</h2>
 
-    <div id={sectionId}>
-
-      <Section heading={heading}>
-
-        <div
-
-          style={{
-
-            display: "flex",
-
-            flexDirection: "column",
-
-            gap: "1.2rem",
-
-          }}
-
-        >
-
-          {talks.map((talk) => (
-
-            <div
-
-              key={talk.title}
-
+        {talks.map((talk) => (
+          <div
+            key={talk.title}
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "1.4rem",
+              padding: "1rem",
+              border: "1px solid rgba(90,100,120,0.14)",
+              borderRadius: "12px",
+              backgroundColor: "rgba(79,109,122,0.025)",
+            }}
+          >
+            <img
+              src={talk.image}
+              alt={talk.title}
               style={{
-
-                display: "flex",
-
-                alignItems: "center",
-
-                gap: "1.4rem",
-
-                padding: "1rem",
-
-                border: "1px solid #e5e7eb",
-
-                borderRadius: "12px",
-
-                background: "#fff",
-
-                boxShadow: "0 2px 10px rgba(0,0,0,0.05)",
-
+                width: "170px",
+                borderRadius: "8px",
+                objectFit: "cover",
+                flexShrink: 0,
               }}
+            />
 
-            >
+            <div style={{ flex: 1 }}>
+              <h3 style={{ margin: 0, fontSize: "1.15rem", lineHeight: 1.3 }}>
+                {talk.title}
+              </h3>
 
-              <img
-
-                src={talk.image}
-
-                alt={talk.title}
-
-                style={{
-
-                  width: "170px",
-
-                  borderRadius: "8px",
-
-                  objectFit: "cover",
-
-                  flexShrink: 0,
-
-                }}
-
-              />
-
-              <div style={{ flex: 1 }}>
-
-                <h3 style={{ margin: 0, fontSize: "1.15rem", lineHeight: 1.3 }}>
-
-                  {talk.title}
-
-                </h3>
-
-                <div style={{ marginTop: "0.4rem", fontSize: "0.95rem", color: "#555" }}>
-
-                  <strong>{talk.venue}</strong> · {talk.type}
-
-                </div>
-
-                <div style={{ marginTop: "0.15rem", fontSize: "0.9rem", color: "#888" }}>
-
-                  {talk.date}
-
-                </div>
-
-                <a
-
-                  href={talk.pptx}
-
-                  target="_blank"
-
-                  rel="noopener noreferrer"
-
-                  style={{
-
-                    display: "inline-block",
-
-                    marginTop: "0.9rem",
-
-                    padding: "0.45rem 0.9rem",
-
-                    borderRadius: "6px",
-
-                    background: "#3B82A0",
-
-                    color: "white",
-
-                    textDecoration: "none",
-
-                    fontWeight: 600,
-
-                    fontSize: "0.9rem",
-
-                  }}
-
-                >
-
-                  Download PPTX
-
-                </a>
-
+              <div style={{ marginTop: "0.4rem", color: "#555" }}>
+                <strong>{talk.venue}</strong> · {talk.type}
               </div>
 
+              <div style={{ marginTop: "0.15rem", color: "#888" }}>
+                {talk.date}
+              </div>
+
+              <a
+                href={talk.pptx}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: "inline-block",
+                  marginTop: "0.9rem",
+                  padding: "0.45rem 0.9rem",
+                  borderRadius: "6px",
+                  background: "#4F6D7A",
+                  color: "white",
+                  textDecoration: "none",
+                  fontWeight: 600,
+                  fontSize: "0.9rem",
+                }}
+              >
+                Download PPTX
+              </a>
             </div>
-
-          ))}
-
-        </div>
-
-      </Section>
-
-    </div>
-
+          </div>
+        ))}
+      </div>
+    </section>
   );
-
 }
