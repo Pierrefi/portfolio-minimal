@@ -3,6 +3,7 @@ import React from "react";
 import NewsSection from "../components/NewsSection";
 import TeachingSection from "../components/TeachingSection";
 import ResearchSection from "../components/ResearchSection";
+import TalksSection from "../components/TalksSection";
 
 import {
 
@@ -45,7 +46,9 @@ export default function IndexPage() {
 
         <ResearchSection sectionId="research" heading="Publications" />
 
-        <TeachingSection sectionId="teaching" heading="Teaching" />
+       <TeachingSection sectionId="teaching" heading="Teaching" />
+
+        <TalksSection sectionId="talks" heading="Talks" />
 
       </Page>
 
