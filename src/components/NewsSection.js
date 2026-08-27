@@ -5,13 +5,20 @@ const highlightStyle = {
   fontWeight: 700,
 };
 
+const paperTitleStyle = {
+  fontSize: "0.92rem",
+  fontStyle: "italic",
+  fontWeight: 500,
+  lineHeight: 1.55,
+};
+
 const news = [
   {
     date: "08/2026",
     text: (
       <>
-        My paper "A Geometry-Aware Depth Function for Robust Unsupervised Textual
-Anomaly Detection" has been accepted at{" "}
+        My paper “<span style={paperTitleStyle}>A Geometry-Aware Depth Function for
+        Robust Unsupervised Textual Anomaly Detection</span>” has been accepted at{" "}
         <span style={highlightStyle}>EMNLP 2026</span> 🇭🇺 —{" "}
         <strong>Findings</strong>.
       </>
@@ -21,7 +28,8 @@ Anomaly Detection" has been accepted at{" "}
     date: "05/2026",
     text: (
       <>
-        My paper "Enhancing Two Steps Textual Anomaly Detection through Anisotropy Mitigation"has been accepted at{" "}
+        My paper “<span style={paperTitleStyle}>Enhancing Two Steps Textual Anomaly
+        Detection through Anisotropy Mitigation</span>” has been accepted at{" "}
         <span style={highlightStyle}>ACL 2026</span> 🇺🇸 —{" "}
         <strong>Oral Presentation</strong>.
       </>
