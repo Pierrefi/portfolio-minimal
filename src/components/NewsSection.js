@@ -12,15 +12,25 @@ const paperTitleStyle = {
   lineHeight: 1.55,
 };
 
+const paperListStyle = {
+  margin: "0.35rem 0 0",
+  paddingLeft: "1.25rem",
+};
+
 const news = [
   {
     date: "08/2026",
     text: (
       <>
-        My paper “<span style={paperTitleStyle}>A Geometry-Aware Depth Function for
-        Robust Unsupervised Textual Anomaly Detection</span>” has been accepted at{" "}
+        1 paper accepted at{" "}
         <span style={highlightStyle}>EMNLP 2026</span> 🇭🇺 —{" "}
         <strong>Findings</strong>.
+        <ul style={paperListStyle}>
+          <li style={paperTitleStyle}>
+            A Geometry-Aware Depth Function for Robust Unsupervised Textual
+            Anomaly Detection
+          </li>
+        </ul>
       </>
     ),
   },
@@ -28,10 +38,15 @@ const news = [
     date: "05/2026",
     text: (
       <>
-        My paper “<span style={paperTitleStyle}>Enhancing Two Steps Textual Anomaly
-        Detection through Anisotropy Mitigation</span>” has been accepted at{" "}
+        1 paper accepted at{" "}
         <span style={highlightStyle}>ACL 2026</span> 🇺🇸 —{" "}
         <strong>Oral Presentation</strong>.
+        <ul style={paperListStyle}>
+          <li style={paperTitleStyle}>
+            Enhancing Two Steps Textual Anomaly Detection through Anisotropy
+            Mitigation
+          </li>
+        </ul>
       </>
     ),
   },
@@ -102,7 +117,7 @@ export default function NewsSection({ sectionId = "news", heading = "News" }) {
                 {item.date}
               </div>
 
-              <p
+              <div
                 style={{
                   margin: 0,
                   lineHeight: 1.75,
@@ -110,7 +125,7 @@ export default function NewsSection({ sectionId = "news", heading = "News" }) {
                 }}
               >
                 {item.text}
-              </p>
+              </div>
             </div>
           ))}
         </div>
