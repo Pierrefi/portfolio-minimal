@@ -17,6 +17,14 @@ const paperListStyle = {
   paddingLeft: "1.25rem",
 };
 
+const authorsStyle = {
+  marginTop: "0.15rem",
+  fontSize: "0.85rem",
+  fontStyle: "normal",
+  fontWeight: 400,
+  color: "#667085",
+};
+
 const news = [
   {
     date: "08/2026",
@@ -29,6 +37,9 @@ const news = [
           <li style={paperTitleStyle}>
             A Geometry-Aware Depth Function for Robust Unsupervised Textual
             Anomaly Detection
+            <div style={authorsStyle}>
+              Pierre Fihey, Matthieu Labeau, Pavlo Mozharovskyi
+            </div>
           </li>
         </ul>
       </>
@@ -45,6 +56,9 @@ const news = [
           <li style={paperTitleStyle}>
             Enhancing Two Steps Textual Anomaly Detection through Anisotropy
             Mitigation
+            <div style={authorsStyle}>
+              Pierre Fihey, Matthieu Labeau, Pavlo Mozharovskyi
+            </div>
           </li>
         </ul>
       </>
