@@ -51,7 +51,7 @@ const news = [
       <>
         1 paper accepted at{" "}
         <span style={highlightStyle}>ACL 2026</span> 🇺🇸 —{" "}
-        <strong>Oral Presentation</strong>.
+        <strong>Main Conference, Oral Presentation</strong>.
         <ul style={paperListStyle}>
           <li style={paperTitleStyle}>
             Enhancing Two Steps Textual Anomaly Detection through Anisotropy
