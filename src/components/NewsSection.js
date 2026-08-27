@@ -7,10 +7,21 @@ const highlightStyle = {
 
 const news = [
   {
-    date: "06/2026",
+    date: "08/2026",
     text: (
       <>
-        My first paper has been accepted at{" "}
+        My paper "A Geometry-Aware Depth Function for Robust Unsupervised Textual
+Anomaly Detection" has been accepted at{" "}
+        <span style={highlightStyle}>EMNLP 2026</span> 🇭🇺 —{" "}
+        <strong>Findings</strong>.
+      </>
+    ),
+  },
+  {
+    date: "05/2026",
+    text: (
+      <>
+        My paper "Enhancing Two Steps Textual Anomaly Detection through Anisotropy Mitigation"has been accepted at{" "}
         <span style={highlightStyle}>ACL 2026</span> 🇺🇸 —{" "}
         <strong>Oral Presentation</strong>.
       </>

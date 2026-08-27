@@ -29,10 +29,7 @@
         "label": "Resume",
         "url": "/CV.pdf"
       },
-      "footer": [
-        { "label": "Privacy", "url": "/privacy" },
-        { "label": "Imprint", "url": "/imprint" }
-      ]
+      "footer": []
     },
     "featureToggles": {
       "useDarkModeAsDefault": false,
