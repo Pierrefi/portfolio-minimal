@@ -68,7 +68,7 @@ const news = [
     date: "03/2025",
     text: (
       <>
-        I started teaching as an Adjunct Lecturer at{" "}
+        I started teaching at{" "}
         <span style={highlightStyle}>
           Université Paris-Dauphine
         </span>{" "}
