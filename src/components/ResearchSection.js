@@ -8,6 +8,13 @@ const publications = [
     venue: "ACL 2026",
     link: "https://aclanthology.org/2026.acl-long.1312/",
   },
+  {
+    title:
+      "A Geometry-Aware Depth Function for Robust Unsupervised Textual Anomaly Detection",
+    authors: "Pierre Fihey, Matthieu Labeau, Pavlo Mozharovskyi",
+    venue: "Findings of EMNLP 2026",
+    link: "https://aclanthology.org/2026.findings-emnlp.1731/",
+  }
 ];
 
 export default function ResearchSection({
